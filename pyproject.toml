@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dep-audit"
+version = "0.1.0"
+description = "Python dependency vulnerability scanner using OSV.dev."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "nripankadas07" }]
+keywords = ["security", "vulnerability-scanner", "dependencies", "osv", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["requests>=2.28"]
+
+[project.scripts]
+dep-audit = "dep_audit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/nripankadas07/dep-audit"
+Repository = "https://github.com/nripankadas07/dep-audit"
+
+[tool.setuptools.packages.find]
+where = ["src"]
