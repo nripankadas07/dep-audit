@@ -5,7 +5,7 @@ Lightweight Python dependency vulnerability scanner. Reads a `requirements.txt` 
 ## Install
 
 ```bash
-pip install dep-audit
+python -m pip install -e .
 ```
 
 Requires Python 3.10+. Uses `requests` for OSV transport (pluggable via the `fetcher` argument for testing).
