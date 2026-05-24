@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from typing import Iterable, List, Mapping, Optional
+from typing import Iterable, List, Optional
 
 __all__ = ["DepAuditError", "Finding", "scan_requirements"]
 __version__ = "0.1.0"
