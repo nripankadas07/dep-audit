@@ -27,5 +27,8 @@ dep-audit = "dep_audit.cli:main"
 Homepage = "https://github.com/nripankadas07/dep-audit"
 Repository = "https://github.com/nripankadas07/dep-audit"
 
+[tool.setuptools]
+package-dir = {"" = "src"}
+
 [tool.setuptools.packages.find]
 where = ["src"]
